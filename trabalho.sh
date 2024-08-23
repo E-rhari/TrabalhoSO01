@@ -13,7 +13,7 @@ cat mensagem2.txt
 cat mensagem3.txt
 
 #3
-cat mensagem1.txt mensatem2.txt mensagem3.txt > mensagens.txt
+cat mensagem1.txt mensagem2.txt mensagem3.txt > mensagens.txt
 cat mensagens.txt
 
 #4
@@ -21,10 +21,10 @@ cat mensagens.txt > mensagens_antiga.txt
 fortune >> mensagens.txt
 
 #5
-wc -l mensagens.txt | cut -f 1
+wc -l mensagens.txt | cut -f 1 > linhas.txt
 
 #6
-egrep -o a mensagens.txt | wc -l | cut -f 1
+egrep -o a mensagens.txt | wc -l | cut -f 1 > letras.txt
 
 #7
 ls -R /etc 01> saida.txt 02> erros.txt
